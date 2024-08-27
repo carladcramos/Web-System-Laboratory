@@ -1,0 +1,21 @@
+.btn {
+    color: #ffffff;
+    background-color: #e03a3e;
+    font-family: 'PT Serif', sans-serif;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #fcb728; 
+}
+
+body {
+    font-family: 'League Gothic', sans-serif;
+}
