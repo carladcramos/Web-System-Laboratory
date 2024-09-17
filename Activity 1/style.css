@@ -1,0 +1,25 @@
+.nav-background {
+    background-color: #B8001F;
+}
+
+
+.navbar, .navbar-brand, .nav-link, .dropdown-menu a {
+    color: white !important;
+}
+
+
+/* body {
+    color: white;
+  }
+  
+
+  .carousel-caption {
+    color: #E1D7B7;
+  }
+   */
+
+  .carousel-caption h5, 
+  .carousel-caption p {
+    color: #E1D7B7;
+  }
+  
