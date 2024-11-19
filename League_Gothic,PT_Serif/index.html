@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLAYLIST</title>
+  <link rel="stylesheet" href="list.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <div id="page-banner">
+        <h1 class="title">PLAYLIST</h1>
+        <form id="search-song">
+          <input type="text" id="search-input" placeholder="Search song..." />
+        </form>
+      </div>
+    </header>
+
+    <!-- Add Song  -->
+    <div id="add-song">
+      <h2 class="title">Add Song</h2>
+      <form id="add-song-form">
+        <input type="text" id="song-name" placeholder="Enter song name..." required />
+        <input type="text" id="song-artist" placeholder="Enter artist name..." required />
+        <button type="submit" class="btn btn-primary">ADD</button>
+      </form>
+    </div>
+
+    <div id="song-list">
+      <h2 class="title">SONG LIST</h2>
+      <ul id="song-items">
+        <li>
+          <span class="song">Tingin</span><span class="artist">Cup of Joe</span>
+          <button class="delete">Delete</button>
+        </li>
+        <li>
+          <span class="song">Ligaya</span><span class="artist">Eraserheads</span>
+          <button class="delete">Delete</button>
+        </li>
+        <li>
+          <span class="song">Aphrodite</span><span class="artist">The Ridleys</span>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="list.js"></script>
+</body>
+</html>

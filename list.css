@@ -1,0 +1,130 @@
+body {
+    background-image: url('https://img.freepik.com/free-vector/music-vinyl-record-label-with-sound-notes_1017-33905.jpg?t=st=1728994930~exp=1728998530~hmac=306d8cc793759117f98de4355e1c1e2d118f337a1cdc9b614dc952e6583e54a3&w=1060');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+  }
+  
+  #wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  #page-banner {
+    margin-bottom: 20px;
+  }
+  
+  #search-song {
+    margin: 20px 0;
+  }
+  
+  #search-input {
+    padding: 10px;
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #add-song {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  #add-song-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  #song-name,
+  #song-artist {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+  }
+  
+  #song-name::placeholder,
+  #song-artist::placeholder {
+    color: #aaa;
+  }
+  
+  .btn-primary {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    height: 38px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #218838;
+  }
+  
+  #song-list {
+    margin-top: 20px;
+  }
+  
+  #song-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #song-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    color: white;
+  }
+  
+  .song {
+    font-weight: bold;
+  }
+  
+  .artist {
+    font-style: italic;
+    color: #aaa;
+  }
+  
+  .delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete:hover {
+    background-color: #c82333;
+  }
+  
