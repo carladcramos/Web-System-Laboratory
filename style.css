@@ -1,21 +1,245 @@
 .btn {
-    color: #ffffff;
-    background-color: #e03a3e;
+    color: #FFFFFF;
+    background-color: #1F509A;
     font-family: 'PT Serif', sans-serif;
-    padding: 10px 20px;
-    margin: 0 5px;
+    padding: 12px 25px;
     border: none;
-    border-radius: 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #fcb728; 
+    background-color: #E38E49;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 body {
     font-family: 'League Gothic', sans-serif;
+    background-color: #D4EBF8;
+    margin: 0;
+    padding: 20px;
+    background-image: url('https://img.freepik.com/free-photo/view-gym-room-training-sports_23-2151699538.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1:hover {
+    background-color: #E38E49;
+    transition: background-color 0.3s ease;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.exercise-list {
+    flex: 2;
+}
+
+.add-workout {
+    flex: 1;
+    background: #FFFFFF;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.add-workout h2 {
+    color: #1F509A;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+.exercise-card {
+    background: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.exercise-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.exercise-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #D4EBF8;
+    padding-bottom: 10px;
+}
+
+.exercise-header h3 {
+    color: #1F509A;
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.exercise-details p {
+    margin: 8px 0;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.timestamp {
+    font-size: 0.9em;
+    color: #888;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1F509A;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #D4EBF8;
+    border-radius: 10px;
+    font-family: 'PT Serif', sans-serif;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #E38E49;
+    box-shadow: 0 0 8px rgba(227, 142, 73, 0.2);
+}
+
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #1F509A;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.delete-btn span {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.delete-btn:hover {
+    color: #E38E49;
+    background-color: rgba(227, 142, 73, 0.1);
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .add-workout {
+        order: -1;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.75em;
+        padding: 10px 20px;
+    }
+}
+
+.edit-form {
+    padding: 15px;
+}
+
+.edit-form .input-group {
+    margin-bottom: 10px;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.edit-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.save-btn, .cancel-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
 }
